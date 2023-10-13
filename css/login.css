@@ -1,0 +1,223 @@
+img{
+    pointer-events: none; 
+}
+
+.auth{
+    background: url('../img/auth/auth.jpg') no-repeat center / cover;
+    height: 100vh;
+    position: relative;
+}
+
+.pick{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #4386f1ee;
+
+}
+
+
+.contentForm{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 80px 0 0;
+}
+
+.formTitle{
+    width: 100%;
+}
+
+.formTitle h2{
+    color: #fff;
+    font-size: 32px;
+}
+
+.formTitle p{
+    color: #fff;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.form{
+    background: #fff;
+    z-index: 9;
+    width: 350px;
+    padding: 40px 30px;
+    margin: 75px 0 0 0;
+    border-radius: 20px;
+
+    position: relative;
+}
+
+.formImgElementMan{
+    position: absolute;
+    right: -195px;
+    bottom: 0px;
+}
+
+.formImgElementWoman{
+    position: absolute;
+    left: -91px;
+    bottom: 0px;
+}
+
+
+.formIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: calc(50% - 40px);
+    top: -40px;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+
+
+.formItem{
+    position: relative;
+    height: 20px;
+    padding: 15px;
+    margin: 15px 0 0 0;
+}
+
+
+.input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 328px;
+    border-radius: 60px;
+    border: 1px solid #ddd;
+    padding-left: 20px;
+
+}
+
+.label{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    
+    height: 100%;
+    top: 0;
+    left: 20px;
+    font-size: 14px;
+    pointer-events: none;
+    color: #999;
+    transition: .2s;
+}
+
+
+.input:focus ~ .label,
+.input:not(:focus):valid~.label {
+  top: -8px;
+  left: 0;
+  height: 5px;
+  font-size: 12px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.input:focus{
+    color: #4386F1;
+    border: 1px solid #2478ff;
+}
+
+.input:focus ~ .label{
+    color: #4386F1;
+}
+
+.formBtn{
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4386F1;
+    border: 0;
+    font-size: 14px;
+    border-radius: 50px;
+    color: #fff;
+    padding: 18px 36px;
+    cursor: pointer;
+    transition: .2s;
+    font-weight: bold;
+}
+
+.submit:hover{
+    background: #2478ff;
+}
+
+.authRegLog{
+    margin: 0 0 0 15px;
+    font-size: 14px;
+    color: #4386F1;
+    text-decoration: none;
+}
+
+@media(min-width: 320px) and (max-width: 450px){
+    
+    .formTitle{
+        width: 100%;
+    }
+    
+    .form{
+        width: 90vw;
+        padding: 40px 10px;
+    }
+    
+    .formImgElementMan{
+        display: none;
+    }
+    
+    .formImgElementWoman{
+        display: none;
+    }
+    
+    .formItem{
+        height: 18px;
+    }
+    
+    
+    .input{
+        width: 86vw;
+        padding-left: 3vw;
+    }
+    
+    .submit{
+        padding: 16px 32px;
+    }
+    
+    .authRegLog{
+        margin: 0 0 0 10px;
+    }
+    
+}
+
+@media(min-width: 450px) and (max-width: 850px){
+    .formImgElementMan{
+        display: none;
+    }
+    
+    .formImgElementWoman{
+        display: none;
+    }
+    
+}
+
+
+footer{
+    margin: 0 !important;
+}

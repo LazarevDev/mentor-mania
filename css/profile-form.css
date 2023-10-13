@@ -1,0 +1,79 @@
+.profileFormBlock{
+    width: 100%;
+}
+
+.formContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.labelFormContent{
+    margin: 25px 0 0 0;
+}
+
+.labelFormContent h3{
+    color: #4386F1;
+    font-size: 18px;
+}
+
+.labelFormContent{
+    display: flex;
+    flex-wrap: wrap;
+    width: 49%;
+}
+
+.labelFormContent h3{
+    width: 100%;
+}
+
+.labelFormContent input{
+    display: flex;
+    width: 100%;
+    margin: 15px 0 0 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 16px 0 16px 10px;
+    font-size: 14px;
+}
+
+.labelFormContent textarea{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin: 15px 0 0 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 16px 0 16px 10px;
+    resize: none;
+    font-size: 14px;
+}
+
+.btnFormSubmit{
+    width: 100%;
+    margin: 25px 0 0 0;
+}
+
+.formSubmit{
+    background: #4386F1;
+    border-radius: 90px;
+    padding: 16px 32px;
+    color: #fff;
+    transition: .4s;
+}
+
+.formSubmit:hover{
+    background: #2478ff;
+}
+
+@media(min-width: 320px) and (max-width: 800px){
+    .formContainer{
+        justify-content: center;
+    }
+
+    .labelFormContent{
+        width: 100vw;
+    }
+
+}

@@ -1,0 +1,179 @@
+
+
+.profileSection{
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 0 0;
+}
+
+.profileContent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.profileImg{
+    width: 120px;
+    height: 120px;
+
+    position: relative;
+}
+
+.profileImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.inputPhoto{
+    display: none;
+}
+
+.labelPhoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: #4386F1;
+    border-radius: 50%;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.labelPhoto img{
+    width: 20px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.profileTitle{
+    margin: 0 0 0 15px;
+}
+
+.profileTitle h2{
+    color: #4386F1;
+    font-size: 26px;
+}
+
+.profileTitle p{
+    color: #999;
+    font-size: 16px;
+}
+
+/* msg */
+
+.msgContent{
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    margin: 25px 0 0 0;
+}
+
+.msg{
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+}
+
+.msgIcon img{
+    width: 30px;
+}
+
+.msgText{
+    color: #999;
+    margin: 0 0 0 10px;
+}
+
+/* profileMenu */
+
+.profileMenu{
+    display: flex;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 25px 0 0 0;
+}
+
+.btnMenu{
+    width: 50%;
+    padding: 20px 0;
+    font-weight: 600;
+    color: #4386F1;
+    border-radius: 10px;
+}
+
+.active{
+    background: #4386F1;
+    color: #fff;
+    transition: .4s;
+}
+
+.profileDynamicContent{
+    background: #fff;
+    border-radius: 20px;
+    padding: 5px 25px 30px;
+    margin: 25px 0 0 0;
+}
+
+@media(min-width: 320px) and (max-width: 550px){
+    
+    .profileContent{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .profileTitle{
+        margin: 10px 0 0 15px;
+    }
+
+    .profileTitle{
+        text-align: center;
+        width: 100%;
+    }
+
+    .profileTitle h2{
+        font-size: 22px;
+    }
+
+    .profileTitle p{
+        font-size: 14px;
+    }
+
+    /* msg */
+
+    .msg{
+        display: flex;
+        align-items: center;
+        padding: 8px 10px;
+    }
+
+    .msgText{
+        margin: 0 0 0 10px;
+        font-size: 14px;
+    }
+
+    /* profileMenu */
+
+    .btnMenu{
+        padding: 15px 0;
+        font-size: 14px;
+    }
+
+    .active{
+        background: #4386F1;
+        color: #fff;
+        transition: .4s;
+    }
+
+    .profileDynamicContent{
+        padding: 0 10px;
+        border-radius: 5px;
+    }
+
+}

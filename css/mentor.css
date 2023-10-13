@@ -1,0 +1,425 @@
+/* mentor */
+
+.mentorSection{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 50px 0 0 0;
+}
+
+.mentorContent{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mentor{
+    width: 260px;
+}
+
+.mentorPhoto{
+    width: 260px;
+}
+
+.mentorPhoto img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.mentorBtn{
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    color: #fff;
+    background: #4386F1;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.send:hover{
+    background: #2478ff;
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #666;
+    margin: 15px 0 0 0;
+    transition: .2s;
+}
+
+.back:hover{
+    color: #4386F1;
+}
+
+.mentorInformation{
+    width: calc(100% - 290px);
+}
+
+.title h2{
+    color: #4386F1;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.title p{
+    margin: 10px 0 0 0;
+    color: #666;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0 0 0;
+}
+
+.tags p{
+    margin: 5px 5px 0 0;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 10px 20px;
+    color: #999;
+    font-weight: 400;
+    background: #d8d8d8;
+}
+
+.description{
+    margin: 25px 0 0 0;
+}
+
+.description h2{
+    color: #4386F1;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.description p{
+    color: #666;
+    font-size: 16px;
+    margin: 15px 0 0 0;
+}
+
+
+/* mentorsContent */
+
+.mentorsContent{
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.mentorsBlock{
+    background: #fff;
+    width: 300px;
+    margin: 30px 0 0 0;
+    padding: 25px 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.mentorsBlockImg{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.mentorsBlockImg img{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.mentorsBlockTitle{
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+
+.mentorsBlockTitle h2{
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mentorsBlockTitle p{
+    color: #666;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.mentorsBlockDescription{
+    margin: 15px 0 0 0;
+    text-align: center;
+}
+
+.mentorsBlockDescription p{
+    margin: 5px 0 0 0;
+    font-weight: 500;
+    color: #666;
+}
+
+.mentorsBlockDescription p span{
+    color: #333;
+}
+
+.mentorsBlockBtnContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+.mentorsBlockBtn{
+    padding: 14px 28px;
+    color: #fff;
+    background: #4386F1;
+    border: 1px solid #4386F1;
+    border-radius: 60px;
+    font-weight: 500;
+    transition: .4s;
+}
+
+.mentorsBlockBtn:hover{
+    background: none;
+    color: #4386F1;
+}
+
+.mentorsSectionBtnContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 50px 0 0 0;
+}
+
+.mentorsSectionAllBtn{
+    padding: 14px 28px;
+    font-weight: 500;
+    color: #4386F1;
+    border: 1px solid #4386F1;
+    border-radius: 60px;
+    transition: .4s;
+}
+
+.mentorsSectionAllBtn:hover{
+    background: #4386F1;
+    color: #fff;
+}   
+
+
+
+@media (min-width: 320px) and (max-width: 550px){
+        
+    .mentorContent{
+        flex-wrap: wrap;
+    }
+
+    .mentor{
+        width: 100%;
+    }
+
+    .mentorPhoto{
+        width: 100%;
+    }
+
+    .mentorInformation{
+        width: 100%;
+    }
+
+    .title{
+        text-align: center;
+        margin: 20px 0 0 0;
+    }
+
+    .title h2{
+        font-size: 28px;
+    }
+
+    .title p{
+        font-size: 16px;
+    }
+
+    .tags{
+        justify-content: center;
+        margin: 15px 0 0 0;
+    }
+
+    .description{
+        text-align: center;
+    }
+
+    .description h2{
+        color: #4386F1;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .description p{
+        color: #666;
+        font-size: 16px;
+        margin: 15px 0 0 0;
+    }
+
+    .mentorsContent{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+    }
+
+    .mentorsBlock{
+        width: 45vw;
+        margin: 30px 0 0 0;
+    }
+
+    .mentorsBlockImg{
+        height: 60vw;
+    }
+
+    .mentorsBlockImg span{
+        right: -10px;
+        top: -10px;
+        padding: 7px 14px;
+        font-size: 10px;
+        border-radius: 5px;
+    }
+
+    .mentorsBlockMaskText p{
+        font-size: 12px;
+    }
+
+    .mentorsBlockText{
+        margin: 8px 0 0 0;
+    }
+
+    .mentorsBlockText h2{
+        color: #4386F1;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .mentorsBlockText p{
+        font-size: 12px;
+        margin: 0;
+        color: #666;
+    }
+}
+
+
+@media (min-width: 550px) and (max-width: 820px){
+        
+    .mentorContent{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .mentor{
+        width: 320px;
+    }
+
+    .mentorPhoto{
+        width: 100%;
+    }
+
+    .mentorInformation{
+        width: 100%;
+    }
+
+    .title{
+        text-align: center;
+        margin: 25px 0 0 0;
+    }
+
+    .tags{
+        justify-content: center;
+    }
+
+    .description{
+        text-align: center;
+    }
+
+    .mentorsContent{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .mentorsBlock{
+        width: 30vw;
+        margin: 40px 0 0 0;
+    }
+
+    .mentorsBlockImg{
+        height: 38vw;
+    }
+
+    .mentorsBlockImg span{
+        right: -15px;
+        top: -15px;
+        padding: 9px 18px;
+        font-size: 14px;
+    }
+
+    .mentorsBlockMaskText p{
+        font-size: 14px;
+    }
+
+    .mentorsBlockText h2{
+        font-size: 18px;
+    }
+
+    .mentorsBlockText p{
+        font-size: 14px;
+    }
+}
+
+
+@media(min-width: 820px) and (max-width: 1020px){
+    .mentorsContent{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .mentorsBlock{
+        width: 28vw;
+        margin: 40px 0 0 0;
+    }
+
+    .mentorsBlockImg{
+        height: 38vw;
+    }
+}
+
+
+@media(min-width: 1020px) and (max-width: 1420px){
+
+    .mentorsContent{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .mentorsBlock{
+        width: 22vw;
+    }
+    
+    .mentorsBlockImg{
+        height: 28vw;
+    }
+    
+    .mentorsBlockImg span{
+        right: -15px;
+        top: -15px;
+        padding: 9px 18px;
+        font-size: 14px;
+    }
+}
